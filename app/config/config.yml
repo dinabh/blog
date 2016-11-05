@@ -4,9 +4,29 @@ imports:
     - { resource: services.yml }
     - { resource: "@BlogFrontBundle/Resources/config/services.yml" }
     - { resource: "fos/fos_user.yml" }
+    - { resource: "knp/knp_menu.yml" }
+    - { resource: "sonata-project/sonata_admin.yml" }
+    - { resource: "sonata-project/sonata_core.yml" }
+    - { resource: "sonata-project/sonata_block.yml" }
+    - { resource: "sonata-project/sonata_media.yml" }
+    - { resource: "sonata-project/sonata_formatter.yml" }
+    - { resource: "sonata-project/sonata_classification.yml" }
+    - { resource: "sonata-project/sonata_news.yml" }
 
 parameters:
     locale: fr
+    sonata_admin.title:             Blog
+    sonata_admin.logo_title:        /bundles/sonataadmin/logo_title.png
+
+    sonata_media.cdn.host:          /uploads/media
+
+    # Sonata News Options
+    sonata_news.blog_title:         WIST Blog
+    sonata_news.blog_link:          http://wits.com
+    sonata_news.blog_description:   The Blog of the Club SEM
+    sonata_news.salt:               enIsNotSongeThiSsTokItcretCeha
+    sonata_news.comment.emails:     [oussama.khaciai@gamil.com]
+    sonata_news.comment.email_from: no-reply@example.org
 
 framework:
     #esi:             ~

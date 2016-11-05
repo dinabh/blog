@@ -18,7 +18,27 @@ class AppKernel extends Kernel
             new Blog\FrontBundle\BlogFrontBundle(),
 
             //External bundles
-            new FOS\UserBundle\FOSUserBundle(),
+            //new FOS\UserBundle\FOSUserBundle(),
+            //new Sonata\NewsBundle\SonataNewsBundle(),
+            //new Sonata\IntlBundle\SonataIntlBundle(),
+            //new Sonata\ClassificationBundle\SonataClassificationBundle(),
+            //new Sonata\CoreBundle\SonataCoreBundle(),
+            //new Sonata\BlockBundle\SonataBlockBundle(),
+            //new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            //new Application\Sonata\NewsBundle\ApplicationSonataNewsBundle(),
+            //new Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle(),
+            //new JMS\SerializerBundle\JMSSerializerBundle(),
+            //new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            //new Sonata\AdminBundle\SonataAdminBundle(),
+            //new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
+            //new Sonata\MediaBundle\SonataMediaBundle(),
+            //new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
+            //new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            //new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+            //new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
+            //new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            //new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            //new Sonata\FormatterBundle\SonataFormatterBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
