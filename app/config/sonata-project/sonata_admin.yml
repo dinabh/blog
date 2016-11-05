@@ -31,34 +31,6 @@ sonata_admin:
             - { position: right, type: sonata.block.service.rss, settings: { title: IEEE News, url: https://csdl.computer.org/rss/cise.xml, template: SonataAdminBundle:Block:block_rss_dashboard.html.twig }}
 
         groups:
-            sonata.admin.group.conference:
-                label:           Gestion de Conference
-                label_catalogue: WitsFrontBundle
-                icon:            '<i class="fa fa-dashboard"></i>'
-                items:
-                    - wits_front.admin.conference
-                    - wits_front.admin.committee
-                    - wits_front.admin.important_dates
-                    - wits_front.admin.submissions
-                    - wits_front.admin.program
-                    - wits_front.admin.speakers
-                    - wits_front.admin.publication
-                    - wits_front.admin.registration
-                    - wits_front.admin.informations
-                    - wits_front.admin.sponsor
-                    - wits_front.admin.slider
-
-            sonata.admin.group.participant:
-                label:           Gestion de Participant
-                label_catalogue: WitsFrontBundle
-                icon:            '<i class="fa fa-users"></i>'
-                items:
-                    - wits_front.admin.country
-                    - wits_front.admin.city
-                    - wits_front.admin.university
-                    - wits_front.admin.school
-                    - wits_front.admin.participant
-
             sonata.admin.group.news:
                 label:           News
                 label_catalogue: SonataAdminBundle
@@ -154,3 +126,4 @@ sonata_admin:
             - bundles/sonataformatter/markitup/sets/html/set.js
             - bundles/sonataformatter/markitup/sets/textile/set.js
             - bundles/sonatapage/sonata-page.back.js
+
